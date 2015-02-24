@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+header {
+  @include padding($base-spacing 0);
+  @include outer-container;
+  position: relative;
+  background-color: $header-bg;
+  // border-bottom: $base-border;
+
+  a {
+    &.login {
+      @include font-size(12);
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: 300;
+    }
+
+    &.hours {
+      float: right;
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+  @include media($mobile) {
+    @include padding($base-spacing 0 0);
+    a.hours {
+      float: none;
+      @include margin(0 auto);
+      @include padding($base-spacing/2 0);
+      text-align: center;
+      clear: both;
+      width: 100%;
+      border-top: $base-border;
+    }
+  }
+
+  .social {
+    float: right;
+    text-align: right;
+    li {
+      display: table-cell;
+      vertical-align: middle;
+      @include padding(3px);
+    }
+
+    .fa {
+      @include font-size(30);
+      color: $color-black;
+    }
+  }
+}
+

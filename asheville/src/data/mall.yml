@@ -1,0 +1,21 @@
+# Site settings
+title: Asheville
+version: 0.0.1
+author: Noel Killebrew
+email: noel@placewise.com
+description: "Asheville Outlets"
+baseurl: ""
+url: ""
+
+google_analytics: false
+google_analytics_id: UA-XXXXXXXX-X
+jquery_version: 1.11.2
+
+name: mall
+streetaddress: 1234 Address Example
+city: Asheville
+state: ZZ
+zip: 00000
+phone: '555-555-5555'
+
+footer: ""

@@ -1,0 +1,67 @@
+.home {
+	.content {
+		@include padding(0);
+	}
+}
+.homeblock {
+	@include span-columns(4);
+	margin-top: $base-spacing;
+	margin-bottom: $base-spacing;
+}
+.homeblock2 {
+}
+.carouselOverlay-wrap {
+		width: $carousel-width;
+	  position: absolute;
+	  top: 21em;
+	.carouselOverlay {
+		box-sizing: border-box;
+		@include padding($base-spacing 2em);
+		background: rgba($color-brand-primary,0.8);
+		float: right;
+		position: relative;
+		z-index: 99;
+		h2 {
+			font-size: 3.6rem;
+			font-weight: 400;
+			color: $color-white;
+			letter-spacing: 1px;
+			@include margin(0);
+		}
+		p.h2 {
+			color: $color-white;
+			font-size: 1.8rem;
+		}
+	}
+}
+@include media($tablet) {
+	.homeblock {
+		@include span-columns(8);
+		text-align: center;
+	}
+	.carouselOverlay-wrap {
+		width: 100%;
+		position: relative;
+		top: initial;
+		@include margin(0);
+		.carouselOverlay {
+			width: 100%;
+			background: rgba($color-brand-primary,1);
+		}
+	}
+}
+@include media($mobile) {
+	.homeblock {
+		@include span-columns(4);
+	}
+	.carouselOverlay-wrap {
+		.carouselOverlay {
+			h2 {
+				font-size: 2.6rem;
+			}
+			p.h2 {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

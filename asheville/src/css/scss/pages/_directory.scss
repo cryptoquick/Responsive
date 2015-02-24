@@ -1,0 +1,45 @@
+.directory {
+	.directory-listing {
+		text-align: center;
+		ul li a {
+			display: block;
+			color: $color-black;
+		}
+		img {
+			margin: 0 auto;
+		}
+	}
+	.directory-form {
+		button { display: none; }
+	}
+	ul.directory-form li {
+		float: left;
+		margin-right: $second-spacing;
+	}
+	ul.left, ul.right, ul.dine {
+		@include span-columns(6);
+		li {
+			border-bottom: 1px dotted $color-grey;
+			@include padding($base-spacing 0);
+			height: 175px;
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+	@include media($tablet) {
+		ul.left, ul.right, ul.dine {
+			@include span-columns(8);
+		}
+	}
+	@include media($mobile) {
+		ul.left, ul.right, ul.dine {
+			@include span-columns(4);
+		}
+	}
+}
+p.comingsoon {
+	font-size: 1.4rem;
+	font-style: italic;
+	margin: 0.5em 0;
+}
