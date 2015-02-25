@@ -1,8 +1,7 @@
 @mixin push {
-  float: right;
-  margin-right: 0;
+  float: right!important;
 }
 
 @mixin pull {
-  float: left;
+  float: left!important;
 }

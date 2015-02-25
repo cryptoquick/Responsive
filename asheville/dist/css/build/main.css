@@ -2573,10 +2573,9 @@ body {
 .content {
   overflow: hidden;
   background-color: #fff;
-  padding: 1em 0; }
-  @media screen and (max-width: 1020px) {
-    .content {
-      padding: 0 1em; } }
+  padding: 1em 1em 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
   .content .container {
     background-color: #fff; }
 
@@ -2679,11 +2678,11 @@ header {
     float: right; }
     header a.hours span {
       text-transform: uppercase; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1020px) {
     header {
       padding: 1em 0 0; }
       header a.hours {
-        float: none;
+        float: left;
         margin: 0 auto;
         padding: 0.5em 0;
         text-align: center;
@@ -3083,10 +3082,9 @@ footer {
   height: auto !important; }
 
 .styleguide article {
-  float: left; }
+  float: left !important; }
 .styleguide aside {
-  float: right;
-  margin-right: 0; }
+  float: right !important; }
 
 .swatch {
   margin: 0 0 1em; }
@@ -3133,8 +3131,9 @@ footer {
 
 .mall-logo {
   display: inline-block;
-  z-index: 9999; }
-  @media screen and (max-width: 600px) {
+  z-index: 9999;
+  position: relative; }
+  @media screen and (max-width: 1020px) {
     .mall-logo {
       float: left;
       display: block;
@@ -3594,7 +3593,8 @@ p.comingsoon {
     text-align: center; } }
 
 .home .content {
-  padding: 0; }
+  padding: 0;
+  border: none; }
 
 .homeblock {
   float: left;
@@ -3602,17 +3602,40 @@ p.comingsoon {
   margin-right: 1.9356%;
   width: 32.04294%;
   margin-top: 1em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  min-height: 200px; }
   .homeblock:last-child {
     margin-right: 0; }
+
+#iFeatures {
+  max-width: 300px;
+  margin: 0 auto; }
+
+.homeblock1 {
+  float: left !important;
+  margin-right: 1em;
+  text-align: left; }
+
+.homeblock2 {
+  float: right !important;
+  text-align: center; }
+  .homeblock2 h3 {
+    text-align: left; }
+  .homeblock2 p {
+    text-align: left; }
+
+.homeblock3 {
+  float: right !important;
+  margin-right: 0;
+  text-align: right; }
 
 .carouselOverlay-wrap {
   width: 62.5em;
   position: absolute;
-  top: 21em; }
+  top: 16em; }
   .carouselOverlay-wrap .carouselOverlay {
-    box-sizing: border-box;
     padding: 1em 2em;
+    box-sizing: border-box;
     background: rgba(9, 140, 192, 0.8);
     float: right;
     position: relative;
@@ -3628,6 +3651,9 @@ p.comingsoon {
       font-size: 1.8rem; }
 
 @media screen and (max-width: 1020px) {
+  .homeblock1 {
+    text-align: center; }
+
   .homeblock {
     float: left;
     display: block;
@@ -3635,6 +3661,12 @@ p.comingsoon {
     width: 100%;
     text-align: center; }
     .homeblock:last-child {
+      margin-right: 0; } }
+  @media screen and (max-width: 1020px) and (max-width: 1020px) {
+    .homeblock.homeblock3 {
+      display: none; } }
+@media screen and (max-width: 1020px) {
+    .homeblock.homeblock2 {
       margin-right: 0; }
 
   .carouselOverlay-wrap {

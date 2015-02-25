@@ -1,22 +1,46 @@
 .home {
 	.content {
 		@include padding(0);
+		border: none;
 	}
 }
 .homeblock {
 	@include span-columns(4);
 	margin-top: $base-spacing;
 	margin-bottom: $base-spacing;
+	min-height: 200px;
+}
+#iFeatures {
+	max-width: 300px;
+	@include margin(0 auto);
+}
+.homeblock1 {
+	@include pull;
+	margin-right: $base-spacing;
+	text-align: left;
 }
 .homeblock2 {
+	@include push;
+	text-align: center;
+	h3 {
+		text-align: left;
+	}
+	p {
+		text-align: left;
+	}
+}
+.homeblock3 {
+	@include push;
+	margin-right: 0;
+	text-align: right;
 }
 .carouselOverlay-wrap {
 		width: $carousel-width;
 	  position: absolute;
-	  top: 21em;
+	  top: 16em;
 	.carouselOverlay {
-		box-sizing: border-box;
 		@include padding($base-spacing 2em);
+		box-sizing: border-box;
 		background: rgba($color-brand-primary,0.8);
 		float: right;
 		position: relative;
@@ -35,9 +59,18 @@
 	}
 }
 @include media($tablet) {
+	.homeblock1 {
+		text-align: center;
+	}
 	.homeblock {
 		@include span-columns(8);
 		text-align: center;
+		&.homeblock3 {
+			@include tablet-hidden;
+		}
+		&.homeblock2 {
+			margin-right: 0;
+		}
 	}
 	.carouselOverlay-wrap {
 		width: 100%;

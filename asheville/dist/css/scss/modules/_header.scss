@@ -23,10 +23,10 @@ header {
       }
     }
   }
-  @include media($mobile) {
+  @include media($tablet) {
     @include padding($base-spacing 0 0);
     a.hours {
-      float: none;
+      float: left;
       @include margin(0 auto);
       @include padding($base-spacing/2 0);
       text-align: center;
