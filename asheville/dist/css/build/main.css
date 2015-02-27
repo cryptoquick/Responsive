@@ -2134,7 +2134,7 @@ a {
     border: 0 none;
     text-decoration: none; }
   a:hover {
-    color: #1b8cb2; }
+    color: #066286; }
   a.muted, .muted a {
     color: #e1e1e1; }
   a:active, a:hover {
@@ -2369,8 +2369,8 @@ button,
     color: #087eac; }
 
 fieldset {
-  background: #e6e6e6;
-  border: 1px solid #ccc;
+  background: #1a1a1a;
+  border: 1px solid #000;
   margin: 0 0 0.5em 0;
   padding: 1em; }
 
@@ -2407,11 +2407,11 @@ select[multiple=multiple] {
   textarea:hover,
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
   select[multiple=multiple]:hover {
-    border-color: #b3b3b3; }
+    border-color: black; }
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
-    border-color: #b3b3b3;
+    border-color: black;
     outline: none; }
 
 textarea {
@@ -2536,7 +2536,7 @@ table {
   width: 100%; }
 
 th {
-  border-bottom: 1px solid #a6a6a6;
+  border-bottom: 1px solid black;
   font-weight: bold;
   padding: 0.5em 0;
   text-align: left; }
@@ -2555,7 +2555,7 @@ hr {
   box-sizing: content-box;
   height: 0;
   border: 0;
-  border-top: 1px solid #ccc; }
+  border-top: 1px solid #000; }
 
 body {
   background-color: #fff; }
@@ -2573,9 +2573,9 @@ body {
 .content {
   overflow: hidden;
   background-color: #fff;
-  padding: 1em 1em 0;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc; }
+  padding: 1em;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000; }
   .content .container {
     background-color: #fff; }
 
@@ -2623,7 +2623,7 @@ aside {
   margin-right: 1.9356%;
   width: 32.04294%;
   padding: 1em 0 1em 1em;
-  border-left: 1px solid #ccc; }
+  border-left: 1px solid #000; }
   aside:last-child {
     margin-right: 0; }
   @media screen and (max-width: 600px) {
@@ -2688,7 +2688,7 @@ header {
         text-align: center;
         clear: both;
         width: 100%;
-        border-top: 1px solid #ccc; } }
+        border-top: 1px solid #000; } }
   header .social {
     float: right;
     text-align: right; }
@@ -2751,7 +2751,7 @@ nav {
         color: #000;
         text-transform: uppercase; }
         nav ul.menu li a:hover {
-          color: #1b8cb2;
+          color: #066286;
           text-decoration: none; }
       nav ul.menu li ul {
         display: none; }
@@ -2934,8 +2934,6 @@ footer {
     font-weight: 700; }
   footer .mall-details {
     float: left; }
-    footer .mall-details li {
-      display: inline-block; }
     @media screen and (max-width: 600px) {
       footer .mall-details {
         float: none;
@@ -3053,6 +3051,26 @@ footer {
   clear: both;
   overflow: auto; }
 
+.info .left {
+  float: left; }
+
+.info .right {
+  float: right; }
+
+.hours table {
+  margin: 0;
+  padding: 3px; }
+  .hours table td {
+    padding: 0; }
+.hours.right {
+  width: 200px;
+  margin-bottom: 1em; }
+  @media screen and (max-width: 600px) {
+    .hours.right {
+      float: left;
+      clear: both;
+      margin-top: 1em; } }
+
 .trends .bubble-wrpr {
   float: left;
   display: block;
@@ -3095,15 +3113,15 @@ footer {
   padding: 1.5em;
   border-radius: 3px 3px 0 0;
   background-clip: padding-box;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc; }
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000; }
 .swatch-info {
   padding: 0.5em;
   background-color: #fff;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
   text-align: center; }
   .swatch-info p {
     margin: 0; }
@@ -3145,7 +3163,7 @@ footer {
 
 .sale {
   padding: 1em 0;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #000; }
   .sale img {
     float: left;
     margin-right: 1em; }
@@ -3191,7 +3209,7 @@ ul.tabs {
             column-rule: #fff; }
     ul.tabs li a {
       background-color: #e5e5e5;
-      border: 1px solid #ccc;
+      border: 1px solid #000;
       border-bottom: none;
       display: block;
       font-size: 12px;
@@ -3210,7 +3228,7 @@ ul.tabs {
   margin-bottom: 1em; }
 
 .socialcontent {
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   width: 300px; }
 
 #socialcontent_2 {
@@ -3611,6 +3629,26 @@ p.comingsoon {
   max-width: 300px;
   margin: 0 auto; }
 
+#news {
+  max-height: 110px;
+  overflow-y: scroll;
+  list-style-type: disc;
+  border-bottom: 1px solid #000;
+  margin-bottom: 14px; }
+  #news li {
+    display: block;
+    float: left;
+    padding: 0 0 1em 1em;
+    list-style-type: disc; }
+  #news a {
+    color: #000;
+    float: left;
+    font-weight: 300; }
+    #news a.alt-color {
+      text-transform: uppercase;
+      color: #098cc0;
+      font-weight: bold; }
+
 .homeblock1 {
   float: left !important;
   margin-right: 1em;
@@ -3619,8 +3657,13 @@ p.comingsoon {
 .homeblock2 {
   float: right !important;
   text-align: center; }
-  .homeblock2 h3 {
+  .homeblock2 #news {
     text-align: left; }
+  .homeblock2 h3 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 300; }
   .homeblock2 p {
     text-align: left; }
 
@@ -3699,8 +3742,12 @@ input[type="button"] {
 #map-canvas {
   max-width: 100%; }
 
-.info article p {
-  margin-bottom: 1em; }
+.info article a, .info article a[href^="http://"], .info article a[href^="https://"] {
+  color: #098cc0; }
+  .info article a:hover, .info article a[href^="http://"]:hover, .info article a[href^="https://"]:hover {
+    color: #066286; }
+.info article ul {
+  margin-left: 1em; }
 .info article img {
   float: left;
   margin: 0 1em 0 0; }

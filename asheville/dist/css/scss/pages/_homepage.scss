@@ -14,6 +14,29 @@
 	max-width: 300px;
 	@include margin(0 auto);
 }
+#news {
+	max-height: 110px;
+	overflow-y: scroll;
+	list-style-type: disc;
+	border-bottom: $base-border;
+	margin-bottom: 14px; 
+	li {
+		display: block;
+		float: left;
+		@include padding(0 0 $base-spacing $base-spacing);
+		list-style-type: disc;
+	}
+	a {
+		color: $color-black;
+		float: left;
+		font-weight: 300;
+		&.alt-color {
+			text-transform: uppercase;
+			color: $color-brand-primary;
+			font-weight: bold;
+		}
+	}
+}
 .homeblock1 {
 	@include pull;
 	margin-right: $base-spacing;
@@ -22,8 +45,14 @@
 .homeblock2 {
 	@include push;
 	text-align: center;
+	#news {
+		text-align: left;
+	}
 	h3 {
 		text-align: left;
+		text-transform: uppercase;
+		color: $color-black;
+		font-weight: 300;
 	}
 	p {
 		text-align: left;

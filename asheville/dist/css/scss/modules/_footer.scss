@@ -28,10 +28,7 @@ footer {
   }
 
   .mall-details {
-    float:left;
-    li {
-      display: inline-block;
-    }
+    float: left;
 
     @include media($mobile) {
       float: none;

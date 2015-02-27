@@ -3,6 +3,28 @@
   overflow: auto;
 }
 
+.info .left { float: left; }
+.info .right { float: right; }
+
+.hours {
+  table {
+    margin: 0;
+    padding: 3px;
+    td {
+      padding: 0;
+    }
+  }
+  &.right {
+    width: 200px;
+    margin-bottom: $base-spacing;
+    @include media($mobile){
+      float: left;
+      clear: both;
+      margin-top: $base-spacing;
+    }
+  }
+}
+
 .trends {
 
   .bubble-wrpr {

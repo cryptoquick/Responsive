@@ -12,8 +12,14 @@ input[type="button"] {
 // Info pages
 .info {
 	article {
-		p {
-			margin-bottom: $base-spacing;
+		a, a[href^="http://"], a[href^="https://"] {
+			color: $color-brand-primary;
+			&:hover {
+				color: $base-link-color-hover;
+			}
+		}
+		ul {
+			margin-left: $base-spacing;
 		}
 		img {
 			float: left;

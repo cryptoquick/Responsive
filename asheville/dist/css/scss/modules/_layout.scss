@@ -12,7 +12,7 @@ body {
 .content {
   overflow: hidden; //keeps box shadow from covering header
   background-color: $color-white;
-  @include padding($base-spacing $base-spacing 0 $base-spacing);
+  @include padding($base-spacing);
   border-top: $base-border;
   border-bottom: $base-border;
 

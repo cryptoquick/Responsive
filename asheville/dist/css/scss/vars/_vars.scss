@@ -12,7 +12,7 @@
   $mobile: new-breakpoint(max-width 600px 4);
 
   $base-spacing: 1em !default;
-    $pad: $base-spacing;
+  $pad: $base-spacing;
 
   // =Alpha
   $site-alpha: .65;
@@ -55,7 +55,7 @@
   // =Links
   $base-link-bg: null;
   $base-link-color: $color-brand-primary;
-  $base-link-color-hover: mix($color-brand-quaternary, black, 70%);
+  $base-link-color-hover: mix($color-brand-primary, black, 70%);
   $base-link-text-decoration: none !default;
   $base-link-color-alt: $color-brand-secondary;
   $base-link-color-alt-hover: mix($color-brand-secondary, black, 10%);
@@ -210,7 +210,7 @@
   // =Borders
   $base-border-radius: 3px !default;
   $base-border-style: solid;
-  $base-border-color: $color-grey;
+  $base-border-color: $color-black;
   $base-border: 1px $base-border-style $base-border-color;
 
   // =Shadow
