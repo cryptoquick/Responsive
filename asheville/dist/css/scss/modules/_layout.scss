@@ -30,7 +30,7 @@ section {
 
 article {
   @include outer-container;
-  @include span-columns(8);
+  @include span-columns(7.7);
   @include margin(0 null);
 
   @include media($mobile) {
@@ -41,8 +41,8 @@ article {
 }
 
 aside {
-  @include span-columns(4);
-  @include padding($base-spacing 0 $base-spacing $base-spacing);
+  @include span-columns(4.3);
+  @include padding($base-spacing 0.1em $base-spacing $base-spacing);
   border-left: $base-border;
 
   @include media($mobile) {
@@ -54,7 +54,7 @@ aside {
   img, .adBlock-300-250 {
     @include image-bordered;
     @include image-shadowed;
-    overflow: hidden; //added this so the img won't stick out...
+    //overflow: hidden; //added this so the img won't stick out...
     @include media($mobile) {
       box-shadow: none;
     }

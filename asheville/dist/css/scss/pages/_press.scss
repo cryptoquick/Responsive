@@ -1,0 +1,10 @@
+.pressrelease {
+	border-bottom: $base-border;
+	@include padding($base-spacing 0);
+	&:first-child {
+		padding-top: 0;
+	}
+	&:last-child {
+		border: none;
+	}
+}

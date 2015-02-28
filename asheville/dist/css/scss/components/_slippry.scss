@@ -1,17 +1,36 @@
-// .home-carousel {
-//   img {
-//     width: $carousel-width;
-//     margin: 0 auto;
-//     box-shadow: $base-box-shadow;
-//   }
-// }
+.sy-caption-wrap {
+  background: rgba($color-brand-primary,0.8);
+  position: absolute;
+  z-index: 9;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  bottom: $base-spacing * 2;
+  right: 0;
+  h2 {
+    @include padding($base-spacing / 2 $base-spacing);
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: $color-white;
+    letter-spacing: 1px;
+    @include margin(0);
+    span {
+      color: $color-white;
+      font-size: 2.5rem;
+    }
+  }
+  @include media($mobile){
+    display: none;
+  }
+}
+
 .sy-box {
   visibility: hidden;
   overflow: hidden;
 }
 @include media($mobile){
   .sy-box {
-    max-height: 165px;
+    max-height: 140px;
     overflow: hidden;
   }
 }
@@ -119,7 +138,7 @@
     transform: translateY(-20%) translateX(-10%); } }
 /* added to the original element calling slippry */
 .sy-box.sy-loading {
-  background: url(/mimages/wgmse15/sy-loader.gif) 50% 50% no-repeat;
+  background: url(/mimages/ned15/sy-loader.gif) 50% 50% no-repeat;
   -moz-background-size: 32px;
   -o-background-size: 32px;
   -webkit-background-size: 32px;
@@ -277,37 +296,38 @@
           margin-left: -0.7em; } }
 
 /* captions, styled fo the overlay variant */
-.sy-caption-wrap {
-  position: absolute;
-  bottom: 2em;
-  z-index: 12;
-  left: 50%; }
-  .sy-caption-wrap .sy-caption {
-    position: relative;
-    left: -50%;
-    background-color: rgba(0, 0, 0, 0.54);
-    color: #fff;
-    padding: 0.4em 1em;
-    -moz-border-radius: 1.2em;
-    -webkit-border-radius: 1.2em;
-    border-radius: 1.2em; }
-    .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
-      color: #e24b70;
-      font-weight: 600;
-      text-decoration: none; }
-    .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
-      text-decoration: underline; }
-  @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
-    .sy-caption-wrap {
-      left: 0;
-      bottom: 0.4em; }
-      .sy-caption-wrap .sy-caption {
-        left: 0;
-        padding: 0.2em 0.4em;
-        font-size: 0.92em;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        border-radius: 0; } }
+// .sy-caption-wrap {
+//   position: absolute;
+//   bottom: 2em;
+//   z-index: 9999;
+// }
+
+//   .sy-caption-wrap .sy-caption {
+//     position: relative;
+//     left: -50%;
+//     background-color: rgba(0, 0, 0, 0.54);
+//     color: #fff;
+//     padding: 0.4em 1em;
+//     -moz-border-radius: 1.2em;
+//     -webkit-border-radius: 1.2em;
+//     border-radius: 1.2em; }
+//     .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
+//       color: #e24b70;
+//       font-weight: 600;
+//       text-decoration: none; }
+//     .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
+//       text-decoration: underline; }
+//   @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
+//     .sy-caption-wrap {
+//       left: 0;
+//       bottom: 0.4em; }
+//       .sy-caption-wrap .sy-caption {
+//         left: 0;
+//         padding: 0.2em 0.4em;
+//         font-size: 0.92em;
+//         -moz-border-radius: 0;
+//         -webkit-border-radius: 0;
+//         border-radius: 0; } }
 
 /* pager bubbles */
 .sy-pager {

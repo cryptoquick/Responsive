@@ -1,1 +1,9 @@
 @charset "UTF-8";
+
+.event ul {
+	@include bulleted;
+	&.visit-share li{
+		list-style-type: none;
+		list-style: none;
+	}
+}

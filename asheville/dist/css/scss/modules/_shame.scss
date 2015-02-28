@@ -3,6 +3,17 @@
   overflow: auto;
 }
 
+#login-user {
+  float: right;
+  clear: right;
+  text-align: right;
+  font-size: 12px;
+  .horzlist, .horzlist li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .info .left { float: left; }
 .info .right { float: right; }
 
@@ -25,11 +36,32 @@
   }
 }
 
+form#CFForm_1 ul {
+  margin-left: 0;
+  li {
+    list-style-type: none;
+    margin-left: 0;
+  }
+}
+
 .trends {
+
+  .fancyCarouselLeftArrow {
+    margin-left: 200px;
+  }
+
+  .fancyCarouselLeftArrow, .fancyCarouselRightArrow {
+    float: left;
+    margin-top: 20px;
+  }
+  .fancyCarouselThumbs {
+    float: left;
+    width: auto!important;
+    margin: 0 3em;
+  }
 
   .bubble-wrpr {
     @include span-columns(8);
-    @include margin($base-spacing * 2);
     overflow: hidden;
     .bubble-wrpr {
       width: 100%;
@@ -42,10 +74,13 @@
   }
 
   @include media($tablet) {
-    .carouselFancy600 { display: none; }
+    .carouselFancy600, .carouselFancy600-format-bubble-wrpr { display: none!important; }
     .mf_feature___featureImage {
       width: 100%;
       clear: both;
+    }
+    .bubble-wrpr {
+      width: 100%;
     }
   }
 }
@@ -56,4 +91,23 @@
 
 .textholder {
   height: auto!important;
+}
+
+.profile {
+  @include media($tablet){
+    div#reg2cta {
+      background-position: center!important;
+    }
+    .ingress_form {
+      max-width: 100%;
+      overflow: hidden;
+      .ingress_left_side {
+        width: 100%;
+        border: none;
+      }
+      .ingress_right_side {
+        display: none;
+      }
+    }
+  }
 }

@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+// So this sucks but I couldn't find where the style to make this black was coming from anywhere...
+.info {
+  a[href^="http://"], a[href^="http://"]:hover, a[href^="https://"], a[href^="https://"]:hover {
+    color: $color-brand-primary!important;
+  }
+}
+
 // Email links
 a[href^="mailto"] {
   font-weight: normal;

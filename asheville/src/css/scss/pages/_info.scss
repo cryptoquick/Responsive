@@ -12,6 +12,9 @@ input[type="button"] {
 // Info pages
 .info {
 	article {
+		p {
+			margin-bottom: $base-spacing * 0.75;
+		}
 		a, a[href^="http://"], a[href^="https://"] {
 			color: $color-brand-primary;
 			&:hover {
