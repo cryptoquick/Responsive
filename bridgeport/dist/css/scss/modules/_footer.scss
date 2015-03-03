@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	@include padding($base-spacing 0);
+	background-color: $footer-bg;
+	background: url(/mimages/CenterCal15/footer-bg.png) repeat;
+	color: $footer-text;
+
+	span {
+		@include font-size($footer-font-size);
+	}
+
+	ul {
+		@include font-size($footer-font-size);
+	}
+
+	a {
+		color: $footer-link-color;
+		font-weight: $footer-link-font-weight;
+	}
+
+	p {
+		clear: left;
+		@include font-size($disclaimer-text);
+		@include margin($base-spacing * 2 0);
+	}
+
+	.mall-details {
+		float: right;
+		text-align: right;
+		@include media($mobile) {
+			float: none;
+			text-align: center;
+		}
+	}
+
+	.map {
+		float: right;
+	}
+
+	#map-canvas {
+		max-height: 180px;
+		max-width: 320px;
+		@include border-radius($base-border-radius);
+	}
+	#mapDirectionsContainer { display: none; }
+
+	.legal {
+		@include padding($base-spacing 0);
+		@include horizontal-list(piped);
+		float:left;
+
+		@include media($mobile) {
+			float: none;
+			text-align: center;
+		}
+	}
+
+	.social {
+		@include horizontal-list;
+		float: right;
+		text-align: right;
+
+		.fa {
+			@include font-size(40);
+		}
+
+		@include media($mobile) {
+			float: none;
+			text-align: center;
+		}
+	}
+
+	.footer-disclaimer {
+		display: inline-block;
+		@include font-size($disclaimer-text);
+		margin-bottom: $base-spacing/2;
+	}
+
+	.pw-logo {
+		float: left;
+
+		@include media($mobile) {
+			float: none;
+			text-align: center;
+			@include margin(0 auto);
+		}
+	}
+	.mgmt-logo {
+		float: right;
+	}
+
+	&.reveal-footer {
+		height: 385px;
+		z-index: -1;
+	}
+
+	&.sticky-footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background: $color-black;
+		color: $color-brand-quaternary;
+
+		ul {
+			float: left;
+			@include horizontal-list;
+			margin: 0;
+
+			li {
+				margin-right: $base-spacing * 2;
+
+				&.js-last:after {
+					margin: 0;
+				}
+
+				img {
+					margin-right: $base-spacing;
+					vertical-align: middle;
+				}
+
+				a {
+					@include font-size(18);
+					vertical-align: middle;
+				}
+			}
+		}
+
+		.login-register {
+			float: right;
+
+			a {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.sign-up-box {
+	display: inline-block;
+	@include padding($base-spacing);
+	@include border-radius;
+	background-color: $color-dark-grey;
+	input {
+		@include margin(0 10px 0 0);
+		float: left;
+	}
+	input[type=email]{
+		@include padding(0 $base-spacing / 2);
+		max-width: 265px;
+	}
+	input[type=submit]{
+		@include padding (1px $base-spacing*1.5);
+		background-color: $color-brand-quaternary;
+		color: $color-white;
+		border: none;
+		text-transform: uppercase;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	a {
+		font-weight: 500;
+		text-decoration: underline;
+		@include font-size(14);
+	}
+}
+
+.vam {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.reveal-wrapper {
+	min-height: 600px;
+	margin-bottom: 385px;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+header {
+	position: relative;
+	@include padding(($base-spacing *2) 0);
+	border-bottom: 2px solid $header-border;
+	background-color: $header-bg;
+	z-index: 10;
+
+	a {
+		&.hours {
+			@include font-size(16);
+			float: right;
+			clear: right;
+			color: $color-brand-secondary;
+			font-weight: 700;
+			font-family: $nav-font-family;
+
+			@include media($mobile) {
+				position: relative;
+			}
+
+			span {
+				text-transform: uppercase;
+			}
+
+		}
+	}
+
+	.mall-logo {
+		float: left;
+	}
+
+	.social {
+		float: right;
+
+		ul {
+			@include horizontal-list;
+		}
+	}
+}
+

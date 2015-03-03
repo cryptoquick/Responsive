@@ -1,0 +1,29 @@
+.iFeatures {
+	position: absolute;
+	bottom: 70px;
+	width: 100%;
+  @include padding($base-spacing);
+  @include border-radius($base-border-radius $base-border-radius 0 0);
+  background-color: $color-brand-quaternary;
+  color: $color-white;
+
+  img {
+  	float: left;
+  	margin-right: $base-spacing;
+  }
+
+  strong {
+  	@include font-size(22);
+  }
+
+  p {
+  	margin: 0;
+  	line-height: 50px;
+		vertical-align: middle;
+  }
+
+  a {
+  	color: $color-white;
+  	font-weight: 700;
+  }
+}

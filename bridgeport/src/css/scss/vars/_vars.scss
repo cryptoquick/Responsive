@@ -1,0 +1,314 @@
+// =Site Defaults
+
+  @import "../vendor/neat/neat-helpers";
+
+  // =Grid settings
+  $gutter: em(20);
+  $grid-columns: 12;
+  $max-width: em(1124);
+
+  // =Breakpoints
+  $tablet: new-breakpoint(max-width 1020px 8);
+  $mobile: new-breakpoint(max-width 480px 4);
+
+  $base-spacing: 1em !default;
+    $pad: $base-spacing;
+
+  // =Alpha
+  $site-alpha: .65;
+
+  // =Colors
+  $color-white: #fff;
+  $color-black: #000;
+  $color-grey: #9e9e9e;
+  $color-light-grey: #e5e5e5;
+  $color-dark-grey: #353535;
+  $color-off-white: #e5e5e5;
+
+  // =Brand Palette
+  $color-brand-primary: #ba5a29; // Headings
+  $color-brand-secondary: #364261; // Text
+  $color-brand-tertiary: $color-white; // Background
+  $color-brand-quaternary: #5d918c; // Accent
+  $color-brand-quinary: $color-grey; // Accent
+
+  $color-brand-primary-complimentary: red;
+  $color-brand-secondary-complimentary: #6485b1;
+  $color-brand-tertiary-complimentary: green;
+
+  $color-primary-red: red;
+  $color-primary-green: green;
+  $color-primary-blue: $color-brand-quinary;
+
+  // =Background
+  $site-bg: $color-brand-tertiary;
+  $site-bg-start: $color-brand-tertiary;
+  $site-bg-end: #fff;
+  $site-background-attachment: null; // 'fixed, local, inherit, or null'
+
+  // =Default Text Colors
+  $base-font-color: $color-brand-secondary;
+  $base-accent-color: $color-brand-tertiary;
+  // $heading-color: $color-brand-primary;
+  // $heading-color-alt: $color-brand-secondary;
+
+  // =Links
+  $base-link-bg: null;
+  $base-link-color: $color-brand-quaternary;
+  $base-link-color-hover: #7ec4bd;
+  $base-link-font-weight: 700;
+  $base-link-text-decoration: none !default;
+  $base-link-color-alt: $color-brand-secondary;
+  $base-link-color-alt-hover: #6485b1;
+
+  // =External Links
+  $link-external-color: $base-link-color;
+  $link-external-color-hover: $base-link-color-hover;
+
+  // =Email Links
+  $email-link-color: $base-link-color;
+  $email-link-color-hover: shade($base-link-color, 10%);
+  $email-link-font-weight: 700;
+  $email-text-decoration: none;
+
+  // =Phone Links
+  $phone-link-color: $color-brand-quinary;
+  $phone-link-color-hover: shade($base-link-color, 10%);
+  $phone-link-font-weight: 700;
+  $phone-text-decoration: none;
+
+  // =Icons
+  $base-icon-color: $base-font-color;
+  $base-icon-color-hover: $base-link-color-hover;
+
+  // =Social Media
+  $twitter-link-color: $color-off-white;
+  $twitter-link-color-hover: $twitter-link-color;
+  $facebook-link-color: $color-off-white;
+  $facebook-link-color-hover: $facebook-link-color;
+  $youtube-link-color: $color-off-white;
+  $youtube-link-color-hover: $youtube-link-color;
+  $pinterest-link-color: $color-off-white;
+  $pinterest-link-color-hover: $pinterest-link-color;
+  $instagram-link-color: $color-off-white;
+  $instagram-link-color-hover: $instagram-link-color;
+
+  // $icons-list: (
+  //   fa-twitter      #1c96db
+  //   fa-facebook     #3b5998
+  //   fa-youtube      #db1117
+  //   fa-pinterest    #c92228
+  //   fa-instagram    #517fa4
+  // );
+
+  $placeholder-color: $color-light-grey;
+
+  // =Supplementary Colors
+  $alert-bg: mix($color-primary-red, white, 40%);
+  $alert-color: $color-primary-red;
+  $success-bg: mix($color-primary-green, white, 40%);
+  $success-color: $color-primary-green;
+  $info-bg: mix($color-primary-blue, white, 40%);
+  $info-color: $color-primary-blue;
+
+  // =Inline Text Elements
+  $em-color: $base-font-color;
+  $mark-bg: $info-color;
+  $mark-color: $base-font-color !default;
+
+  // =Typography Basics
+  $base-font-reset: 10px !default;
+  $base-font-size: 16 !default;
+  $base-line-height: 1.5625;
+  $lede-font-size: $base-font-size * 1.125;
+  $body-text: $base-font-size;
+  $small-body-text: $base-font-size * .875;
+  $disclaimer-text: $base-font-size * .75;
+  $legal-text: $base-font-size * .6875;
+
+  // =Modular Scale
+  $modular-scale-ratio: 1.61803398875;
+
+  // =Font Families List
+  $font-faces: (
+      'Kefa-Regular': ('Kefa-Regular', 400),
+      'Kefa-Bold': ('Kefa-Bold', 400),
+      'PTSans-Bold': ('PTSans-Bold', 400),
+      'PTSans-BoldItalic': ('PTSans-BoldItalic', 400),
+      'PTSans-Caption': ('PTSans-Caption', 400),
+      'PTSans-CaptionBold': ('PTSans-Caption', 400),
+      'PTSans-Italic': ('PTSans-Italic', 400),
+      'PTSans-Narrow': ('PTSans-Narrow', 400),
+      'PTSans-NarrowBold': ('PTSans-NarrowBold', 400),
+      'PTSans-Regular': ('PTSans-Regular', 400),
+      'fontawesome': ('icons/fontawesome-webfont', normal)
+  );
+  $font-path: '../fonts/';
+
+  // =Font Families
+  $base-font-family: 'PTSans-Regular', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  $heading-font-family: 'Kefa-Bold', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+  $heading-font-family-alt: 'PTSans-NarrowBold', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  $fontawesome: 'FontAwesome';
+
+  // =Headings
+  $heading-color-primary: $color-brand-primary;
+  $heading-color-secondary: $color-brand-secondary;
+  $heading-line-height: 1.25;
+
+  $heading-list: (
+      h1   32   200   $heading-font-family    $heading-color-primary,
+      h2   28   200   $heading-font-family    $heading-color-primary,
+      h3   24   700   $heading-font-family    $heading-color-secondary,
+      h4   19   200   $heading-font-family-alt    $heading-color-primary,
+      h5   16   700   $heading-font-family-alt    $heading-color-secondary,
+      h6   16   100   $heading-font-family    $heading-color-secondary
+  );
+
+  // =Header
+  $header-bg: rgba($color-off-white, .9);
+  $header-border: $color-grey;
+  $header-color: $base-font-color;
+  $header-link: $base-link-color;
+  $header-link-hover: #6485b1;
+  $header-pattern: 'path/to/pattern.png';
+
+  // =Nav
+  $nav-alignment: right;
+  $nav-positioning: -52px; // null
+  $nav-bg: $header-bg;
+  $nav-bg-hover: null;
+  $nav-font-family: $heading-font-family-alt;
+  $nav-font-size: 19;
+  $nav-font-weight: 400;
+  $nav-text-transform: uppercase;
+  $nav-color: $color-brand-secondary;
+  $nav-color-hover: $color-brand-primary;
+  $nav-dropdown-bg: null;
+  $nav-dropdown-bg-hover: null;
+  $nav-dropdown-font-size: $lede-font-size;
+  $nav-dropdown-color: null;
+  $nav-dropdown-color-hover: null;
+  $nav-dropdown-border-color: null;
+  $nav-dropdown-border-color-hover: null;
+  $nav-hamburger-bg: null;
+  $nav-hamburger-color: $color-brand-primary;
+  $nav-off-canvas-side: down; // left, right, down
+  $nav-hamburger-side: right; // if off-canvas, this should match off-canvas side
+  $nav-off-canvas-width: 70%;
+  $nav-off-canvas-bg: $color-white;
+  $nav-sticky: false !default;
+
+  // =Body
+  $body-bg: $color-grey;
+  $body-pattern: 'images/mimages/carousel-1.jpg';
+
+  // =Container Setup
+  $container-bg: transparent;
+  $content-bg: transparent;
+  $content-border-color: $color-light-grey;
+  $box-bg: $color-white;
+  $box-border-color: $color-light-grey;
+
+  // =Footer
+  $footer-bg: null;
+  $footer-font-size: $disclaimer-text;
+  $footer-link-font-weight: 700;
+  $footer-text: $color-grey;
+  $footer-link-color: $color-brand-quaternary;
+  $footer-link-color-hover: $base-link-color-hover;
+
+  // =Borders
+  $base-border-radius: 6px !default;
+  $base-border-style: solid;
+  $base-border-color: $color-grey;
+  $base-border: 1px $base-border-style $base-border-color;
+
+  // =Shadow
+  $base-box-shadow: 0 0 3px 3px $color-dark-grey;
+
+  // =Horizontal Rule
+  $hr-color-top: $color-brand-tertiary;
+  $hr-color-bottom: tint($color-brand-primary, 70%);
+
+  // =Forms
+  $form-border-color: $color-light-grey;
+  $form-border-color-hover: darken($base-border-color, 10);
+  $form-border-color-focus: $form-border-color-hover;
+  $form-border-radius: $base-border-radius;
+  $form-font-family: $base-font-family;
+  $form-font-size: $base-font-size;
+  $form-box-shadow: inset 0 1px 3px rgba($color-black,0.06);
+  $form-box-shadow-focus: null;
+
+  // =Buttons
+  $base-button-color: #da9130;
+  $base-button-color-hover: rgba($base-button-color, .8);
+  $button-border-radius: 0 !default;
+
+  // =Search
+  $search-bg: $color-white;
+  $search-placeholder-color: $placeholder-color;
+  $search-button-bg: $color-brand-quaternary;
+  $search-button-color: $color-white;
+
+  // =Images
+  $image-border: null;
+  $image-box-shadow: $form-box-shadow-focus;
+
+  // Carousel
+  $carousel-width: auto;
+
+  // =Scrollbar
+  $scrollbar-bg: $color-white;
+  $scrollbar-handle-color: $color-brand-secondary;
+
+  // =Modals
+  $modal-header-bg: $color-light-grey;
+  $modal-header-color: $base-font-color;
+  $modal-body-bg: $color-white;
+  $modal-body-color: $base-font-color;
+  $modal-link-color: $base-link-color;
+  $modal-link-color-hover: $base-link-color-hover;
+  $modal-footer-bg: $color-light-grey;
+  $modal-footer-color: $base-font-color;
+
+  // =iFeature
+  $iFeature-bg: transparent;
+  $iFeature-text: $color-brand-quaternary;
+  $iFeature-link: $base-link-color;
+  $iFeature-link-hover: $base-link-color-hover;
+
+  // =Directory
+  $directory-link: $base-font-color;
+  $directory-link-hover: #6485b1;
+
+  // =Weather
+  $weather-icon-color: $base-font-color;
+  $weather-text-color: $base-font-color;
+
+  // =Transition
+  $transition-time: .3s;
+  $transition: all $transition-time ease-in-out;
+
+  // =Animations
+  $animation-delay: .5s;
+  $animation-duration: .5s;
+
+  // =---------------------------------------------------------------------- //
+
+  // =Warnings
+  $disable-warnings: false !default;
+
+  // =Mistakes
+  $find-mistakes: false;
+
+  // =Support IE8
+  $support-legacy: true;
+
+  // =Neat grid
+  $visual-grid: false !global;
+  $visual-grid-color: tint($color-primary-blue, 75%) !global;
+  $visual-grind-index: front !global;
+  $visual-grid-opacity: $site-alpha !global;
+

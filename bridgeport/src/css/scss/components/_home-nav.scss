@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.home-nav {
+	.home-nav-content-container {
+		visibility: hidden;
+		display: none;
+		@include padding($base-spacing);
+		@include border-radius(0 0 $base-border-radius $base-border-radius);
+		background: $site-bg;
+		transition: visibility 0s linear 0.4s, opacity .3s linear, top .3s ease-out;
+	}
+
+	&:hover {
+		.home-nav-content-container {
+			visibility: visible;
+			display: block;
+			background: rgba($color-off-white, .9);
+			opacity: 1;
+		}
+	}
+
+	.tabs {
+		width: 100%;
+		border-collapse: separate;
+    border-spacing: 1em 0;
+    margin: 12px -1em 0;
+    min-width: 102.85%;
+
+		ul {
+			display: table-row;
+		}
+
+		li {
+			display: inline;
+			position: relative;
+			@include padding($base-spacing $base-spacing*3);
+			@include border-radius(0 0 $base-border-radius $base-border-radius);
+			background-color: $color-white;
+			color: $base-font-color;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			margin: 0 2.8px;
+			&:first-child { margin-left: 0; }
+			&.last-child { margin-right: 0; }
+
+			&.js-first {
+				border-left: none;
+			}
+
+			a {
+				display: inline-block;
+				position: relative;
+				@include font-size($nav-font-size);
+				font-family: $heading-font-family-alt;
+				font-weight: normal;
+				color: $nav-color;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+
+			&.active,
+			&.js-active {
+				background: $site-bg;
+				filter: none;
+
+				a {
+					color: $base-font-color;
+				}
+			}
+		}
+	}
+	.home-nav-content {
+		display: none;
+
+		&.active,
+		&.js-active {
+			display: block;
+		}
+	}
+
+	@include media($tablet) {
+
+		.tabs {
+			display: block;
+
+			ul {
+				display: block;
+			}
+
+			li {
+				display: block;
+				border: none;
+				@include border-radius(0);
+				border-bottom: 1px solid $color-light-grey;
+				text-align: left;
+
+				&.js-last {
+					border-bottom: none;
+				}
+
+				a {
+					width: 100%;
+
+					&:after {
+						font-family: $fontawesome;
+						content: '\f107';
+						float: right;
+						@include transition(all, .5s, ease-in-out);
+					}
+
+				}
+				&.active, &.js-active {
+					a {
+						&:after {
+							@include rotate(180);
+							float: right;
+						}
+					}
+				}
+
+				&.js-first {
+					@include border-radius($base-border-radius $base-border-radius 0 0);
+				}
+			}
+		}
+
+		.home-nav-content-container {
+			display: none;
+		}
+
+		.home-nav-content {
+			@include padding($base-spacing);
+			background: $site-bg;
+			filter: none;
+		}
+	}
+}
