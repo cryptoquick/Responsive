@@ -2,7 +2,7 @@
 
 header {
 	position: relative;
-	@include padding(($base-spacing *2) 0);
+	@include padding($base-spacing * 1.5 0 $base-spacing 0);
 	border-bottom: 2px solid $header-border;
 	background-color: $header-bg;
 	z-index: 10;
@@ -23,7 +23,6 @@ header {
 			span {
 				text-transform: uppercase;
 			}
-
 		}
 	}
 

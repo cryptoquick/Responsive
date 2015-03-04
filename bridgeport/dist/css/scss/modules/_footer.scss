@@ -28,9 +28,16 @@ footer {
 		@include margin($base-spacing * 2 0);
 	}
 
+	.container {
+		background-color: transparent;
+	}
+
 	.mall-details {
 		float: right;
 		text-align: right;
+		ul {
+			@include font-size(14);
+		}
 		@include media($mobile) {
 			float: none;
 			text-align: center;
@@ -38,6 +45,7 @@ footer {
 	}
 
 	.map {
+		@include margin(0 0 0 $base-spacing);
 		float: right;
 	}
 

@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
-.content,
+.inner-wrapper {
+  background-image: url(/mimages/CenterCal15/inner.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
 .container {
   @include outer-container;
   position: relative;
 }
 
 .content {
-  @include border-radius;
-  background-color: $content-bg;
-
-  .container {
-		background-color: $color-white;
-  }
-
+  background-color: $color-white;
+  @include margin($base-spacing * 5 0 0 0);
   @include media($tablet) {
     @include padding(0 $base-spacing);
   }
@@ -22,6 +22,8 @@
 section {
   @include margin($base-spacing 0);
   overflow: auto;
+  background-color: $color-white;
+  min-height: 325px;
 
   @include media($mobile) {
     @include span-columns(4);
