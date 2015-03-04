@@ -3648,6 +3648,9 @@ input[type="button"] {
   float: left;
   margin: 0 1em 0 0; }
 
+#terms-content, #privacy-content {
+  padding: 2em; }
+
 #jobWidget {
   margin: 0 0 2em; }
 

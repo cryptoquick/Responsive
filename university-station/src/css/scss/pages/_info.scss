@@ -21,3 +21,8 @@ input[type="button"] {
 		}
 	}
 }
+
+// TOU and Privacy
+#terms-content, #privacy-content {
+  @include padding($base-spacing * 2);
+}
