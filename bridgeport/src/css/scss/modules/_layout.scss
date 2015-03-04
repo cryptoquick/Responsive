@@ -21,11 +21,19 @@
 
 section {
   @include margin($base-spacing 0);
+  @include padding($base-spacing * 2 0);
   overflow: auto;
   background-color: $color-white;
   min-height: 325px;
 
+  .home-nav-content {
+    @include margin(0 0 $base-spacing 0);
+    display: block;
+    overflow: auto;
+  }
+
   @include media($mobile) {
+    min-height: none;
     @include span-columns(4);
   }
 }

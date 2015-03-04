@@ -2617,11 +2617,17 @@ hr {
 
 section {
   margin: 1em 0;
+  padding: 2em 0;
   overflow: auto;
   background-color: #fff;
   min-height: 325px; }
+  section .home-nav-content {
+    margin: 0 0 1em;
+    display: block;
+    overflow: auto; }
   @media screen and (max-width: 480px) {
     section {
+      min-height: none;
       float: left;
       display: block;
       margin-right: 6.04063%;
@@ -2988,6 +2994,24 @@ footer {
       float: right; }
       footer.sticky-footer .login-register a {
         text-decoration: underline; }
+  @media screen and (max-width: 1020px) {
+    footer {
+      text-align: center;
+      position: relative; }
+      footer.reveal-footer {
+        height: auto; }
+      footer .mall-details {
+        clear: both;
+        text-align: center;
+        float: none; }
+      footer .legal {
+        clear: both;
+        float: none; }
+      footer .map {
+        margin: 0;
+        float: none; }
+      footer #map-canvas {
+        margin: 1em auto; } }
 
 .sign-up-box {
   display: inline-block;
@@ -3014,6 +3038,18 @@ footer {
     text-decoration: underline;
     font-size: 14px;
     font-size: 1.4rem; }
+  @media screen and (max-width: 1020px) {
+    .sign-up-box {
+      margin: 0 1em; }
+      .sign-up-box h2 {
+        font-size: 18px;
+        font-size: 1.8rem; }
+      .sign-up-box input[type=email] {
+        max-width: none; }
+      .sign-up-box input {
+        margin: 10px 0;
+        width: 100%;
+        float: none; } }
 
 .vam {
   display: inline-block;
@@ -3333,6 +3369,26 @@ ul.tabs {
       background: #fff;
       -webkit-filter: none;
               filter: none; } }
+
+.home-nav-content img {
+  float: right; }
+
+.navlist {
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 0;
+  float: left;
+  clear: none;
+  width: 220px;
+  min-height: 150px;
+  text-align: right;
+  border-right: 1px solid #9e9e9e; }
+  .navlist a {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #364261;
+    font-weight: 500; }
+    .navlist a:hover {
+      color: #ba5a29; }
 
 .home-carousel {
   position: relative;

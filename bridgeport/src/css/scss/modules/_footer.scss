@@ -145,6 +145,30 @@ footer {
 			}
 		}
 	}
+
+	@include media($tablet){
+		text-align: center;
+		position: relative;
+		&.reveal-footer {
+			height: auto;
+		}
+		.mall-details {
+			clear: both;
+			text-align: center;
+			float: none;
+		}
+		.legal {
+			clear: both;
+			float: none;
+		}
+		.map {
+			@include margin(0);
+			float: none;
+		}
+		#map-canvas {
+			@include margin($base-spacing auto);
+		}
+	}
 }
 
 .sign-up-box {
@@ -174,6 +198,21 @@ footer {
 		font-weight: 500;
 		text-decoration: underline;
 		@include font-size(14);
+	}
+
+	@include media($tablet){
+		@include margin(0 $base-spacing);
+		h2 {
+			@include font-size(18);
+		}
+		input[type=email]{
+			max-width: none;
+		}
+		input {
+			@include margin(10px 0);
+			width: 100%;
+			float: none;
+		}
 	}
 }
 

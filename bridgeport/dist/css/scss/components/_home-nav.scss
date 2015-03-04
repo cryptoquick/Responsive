@@ -146,3 +146,27 @@
 		}
 	}
 }
+.home-nav-content {
+	img {
+		float: right;
+	}
+}
+
+.navlist {
+	@include margin(0 $base-spacing 0 0);
+	@include padding(0 $base-spacing 0 0);
+  float: left;
+  clear: none;
+  width: 220px;
+  min-height: 150px;
+  text-align: right;
+  border-right: $base-border;
+  a {
+  	@include font-size(18);
+  	color: $color-brand-secondary;
+  	font-weight: 500;
+  	&:hover {
+  		color: $color-brand-primary;
+  	}
+  }
+}
