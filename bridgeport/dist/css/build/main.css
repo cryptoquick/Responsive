@@ -2706,7 +2706,7 @@ header {
   header .social {
     float: right; }
     header .social ul li {
-      display: inline; }
+      display: inline-block; }
 
 .outer-wrapper {
   position: relative;
@@ -3110,6 +3110,19 @@ footer {
   @media screen and (max-width: 480px) {
     .mrec .right {
       display: none; } }
+
+.search-box {
+  padding: 0.5em 3em 0 0.5em;
+  position: absolute;
+  width: 300px;
+  right: -0.25em;
+  top: -0.5em;
+  background-color: #fff;
+  z-index: -1;
+  border-radius: 6px;
+  border: 1px solid #5d918c; }
+  .search-box label, .search-box button {
+    display: none; }
 
 .spotlightSidebar-cnt-row {
   display: inline-block;

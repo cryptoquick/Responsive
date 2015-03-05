@@ -34,7 +34,10 @@ header {
 		float: right;
 
 		ul {
-			@include horizontal-list;
+			// @include horizontal-list;
+			li {
+				display: inline-block;
+			}
 		}
 	}
 }
