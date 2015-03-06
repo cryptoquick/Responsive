@@ -12,7 +12,7 @@
   $mobile: new-breakpoint(max-width 480px 4);
 
   $base-spacing: 1em !default;
-    $pad: $base-spacing;
+  $pad: $base-spacing;
 
   // =Alpha
   $site-alpha: .65;
@@ -157,12 +157,12 @@
   $heading-line-height: 1.25;
 
   $heading-list: (
-      h1   32   200   $heading-font-family    $heading-color-primary,
-      h2   28   200   $heading-font-family    $heading-color-primary,
-      h3   24   700   $heading-font-family    $heading-color-secondary,
+      h1   32   200   $heading-font-family        $heading-color-primary,
+      h2   28   200   $base-font-family           $heading-color-secondary,
+      h3   24   700   $heading-font-family        $heading-color-secondary,
       h4   19   200   $heading-font-family-alt    $heading-color-primary,
       h5   16   700   $heading-font-family-alt    $heading-color-secondary,
-      h6   16   100   $heading-font-family    $heading-color-secondary
+      h6   16   100   $heading-font-family        $heading-color-secondary
   );
 
   // =Header
@@ -228,8 +228,8 @@
   $base-box-shadow: 0 0 3px 3px $color-dark-grey;
 
   // =Horizontal Rule
-  $hr-color-top: $color-brand-tertiary;
-  $hr-color-bottom: tint($color-brand-primary, 70%);
+  $hr-color-top: $color-brand-quinary;
+  $hr-color-bottom: tint($color-brand-quinary, 70%);
 
   // =Forms
   $form-border-color: $color-light-grey;

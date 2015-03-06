@@ -1,4 +1,5 @@
 .search-box {
+	display: none;
 	label, button {
 		display: none;
 	}
@@ -8,7 +9,20 @@
 	right: -0.25em;
 	top: -0.5em;
 	background-color: $color-white;
-	z-index: -1;
+	z-index: 0;
 	border-radius: $base-border-radius;
 	border: 1px $base-border-style $color-brand-quaternary;
+}
+
+.search-toggle {
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+li.search-toggle.active {
+  z-index: 99;
+  position: relative;
+  right: 0;
+  top: 0;
 }

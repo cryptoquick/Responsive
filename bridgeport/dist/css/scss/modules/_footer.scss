@@ -137,11 +137,20 @@ footer {
 			}
 		}
 
-		.login-register {
+		#login-user {
 			float: right;
 
-			a {
+			a, span {
+				@include font-size(16);
+				font-weight: 500;
 				text-decoration: underline;
+				&.hey-already {
+					text-decoration: none;
+				}
+				&:hover {
+					cursor: pointer;
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -199,10 +208,18 @@ footer {
 		text-decoration: underline;
 		@include font-size(14);
 	}
+	.title {
+		@include font-size(28);
+		@include margin(0 0 $base-spacing * 0.75);
+		font-family: $heading-font-family;
+		color: $color-brand-primary;
+		font-weight: 200;
+		line-height: 2rem;
+	}
 
 	@include media($tablet){
 		@include margin(0 $base-spacing);
-		h2 {
+		.title {
 			@include font-size(18);
 		}
 		input[type=email]{
